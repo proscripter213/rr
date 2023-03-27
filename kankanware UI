@@ -11,7 +11,7 @@ if getgenv().library then
     getgenv().library:Unload()
 end
 
-local library = {design = getgenv().design == "kali" and "kali" or "uwuware", tabs = {}, draggable = true, flags = {}, title = "kankanware beta V1", open = false, popup = nil, instances = {}, connections = {}, options = {}, notifications = {}, tabSize = 0, theme = {}, foldername = "kankan_cfgs", fileext = ".txt"}
+local library = {design = getgenv().design == "kali" and "kali" or "uwuware", tabs = {}, draggable = true, flags = {}, title = "kankanware beta", open = false, popup = nil, instances = {}, connections = {}, options = {}, notifications = {}, tabSize = 0, theme = {}, foldername = "kankan_cfgs", fileext = ".txt"}
 getgenv().library = library
 
 --Locals
@@ -166,9 +166,9 @@ library.createLabel = function(option, parent)
     option.main = library:Create("TextLabel", {
         LayoutOrder = option.position,
         Position = UDim2.new(0, 6, 0, 0),
-        Size = UDim2.new(1, -12, 0, 10),
+        Size = UDim2.new(1, -12, 0, 24),
         BackgroundTransparency = 1,
-        TextSize = 15,
+        TextSize = 12,
         Font = Enum.Font.Code,
         TextColor3 = Color3.new(1, 1, 1),
         TextXAlignment = Enum.TextXAlignment.Left,
